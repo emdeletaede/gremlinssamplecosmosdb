@@ -35,7 +35,7 @@ To run this sample, you'll need:
 From your shell or command line:
 
 ```Shell
-git clone https://github.com/emdeletaede/gremlinssamplecosmosdb/.git
+git clone https://github.com/emdeletaede/gremlinssamplecosmosdb.git
 ```
 
 or download and extract the repository .zip file.
@@ -58,7 +58,7 @@ change the db name , the key and endpoint of your cosmosdb .
 ### Step 3:  Run the application  
 
 ```Shell
-$ python connect.py
+$ python connecthidde.py
 
 
 ```
