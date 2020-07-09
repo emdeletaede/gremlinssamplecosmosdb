@@ -4,7 +4,7 @@ languages:
 - python
 products:
 - azure-cosmosdb 
-description: "This sample demonstrates a Python application that will download the graph sample of neo4J sample to use with cosmosdb  "
+description: "This sample demonstrates a Python application that will download the graph sample of this public use case you can find here : https://programminghistorian.org/en/lessons/dealing-with-big-data-and-network-analysis-using-neo4j#loading-data-into-neo4j and use this sample with cosmosdb  "
 
 ---
 # use the neo4J sample data with azure cosmosdb 
@@ -54,7 +54,10 @@ $ Python -m pip install gremlin_python
 
 ```
 
-change the db name , the key and endpoint of your cosmosdb . 
+change the db name , the key and endpoint of your cosmosdb . add your graph previously create in a graph API cosmosdb if you don't know how to do this refer to 
+https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-python where how to create a graph is explaiin 
+
+
 ### Step 3:  Run the application  
 
 ```Shell
@@ -62,8 +65,13 @@ $ python connecthidde.py
 
 
 ```
+### Review and add sample data
+After the vertices and edges are inserted, you can now go back to Data Explorer and see the vertices added to the graph, and add additional data points.
 
+In your Azure Cosmos DB account in the Azure portal, select Data Explorer, expand sample-graph, select Graph, and then select Apply Filter.
 
-in addition a word with more information will arrive in the future 
+ ![Cosmos DB account](media/azure-cosmosdb-data-explorer-expanded.png) 
+
+In the Results list, notice three new users are added to the graph. You can move the vertices around by dragging and dropping, zoom in and out by scrolling the wheel of your mouse, and expand the size of the graph with the double-arrow.
 
 
