@@ -58,20 +58,26 @@ change the db name , the key and endpoint of your cosmosdb . add your graph prev
 https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-python where how to create a graph is explaiin 
 
 
-### Step 3:  Run the application  
+### Step 3:  Run the application  to load the graph 
 
 ```Shell
 $ python connecthidde.py
 
 
 ```
-### Review and add sample data
+### step 4 Review and consume the data 
 After the vertices and edges are inserted, you can now go back to Data Explorer and see the vertices added to the graph, and add additional data points.
 
 In your Azure Cosmos DB account in the Azure portal, select Data Explorer, expand sample-graph, select Graph, and then select Apply Filter.
 
  ![Cosmos DB account](media/azure-cosmosdb-data-explorer-expanded.png) 
 
-In the Results list, notice three new users are added to the graph. You can move the vertices around by dragging and dropping, zoom in and out by scrolling the wheel of your mouse, and expand the size of the graph with the double-arrow.
+In the Results list, you can see the graph. You can move the vertices around by dragging and dropping, zoom in and out by scrolling the wheel of your mouse, and expand the size of the graph with the double-arrow.
+
+some gremlins query you can execute are 
+
+g.V().count() to have the number of objects. 
+
+g.V().has('name', 'CANADIAN BANK OF COMMERCE')  to find the object with specific name 
 
 
