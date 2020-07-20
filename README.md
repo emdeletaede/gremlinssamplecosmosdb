@@ -80,4 +80,8 @@ g.V().count() to have the number of objects.
 
 g.V().has('name', 'CANADIAN BANK OF COMMERCE')  to find the object with specific name 
 
+g.V().hasLabel('company').outE('10').inV().hasLabel('company').outE('14').inV().hasLabel('company') find all the company where a director stay 10 years and 14 years ... 
+
+g.V().hasLabel('company').has('name', TextP.startingWith( 'CANADIAN')) find all the company where name start with CANADIAN
+
 
